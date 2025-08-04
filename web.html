@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Your Name - Personal Website</title>
+  <link rel="stylesheet" href="styleweb.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="home-section">
+    <div class="home-content">
+      <div class="home-text">
+        <h1>Hey,</h1>
+        <h1> I'm </h1>
+        <h1>  ANIRBAN ROY. </h1>
+        <p> </p>
+        <p>Welcome to my personal website. I am CSE student and passionate about web development and programming!</p>
+      </div>
+      <div class="home-image">
+        <!-- Background image will be styled in CSS -->
+      </div>
+    </div>
+  </section>
+   
+  <section id="about" class="about-section">
+    <h2>About Me</h2>
+    <p>I am a web developer with a passion for creating dynamic and responsive web applications. I love working with modern technologies and solving complex problems.</p>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About Page</title>
+        <style>
+            /* Add basic styling for the button and section */
+            .cv-section {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                background-color: #f4f4f4;
+            }
+    
+            .cv-button {
+                padding: 10px 20px;
+                font-size: 18px;
+                background-color: #4CAF50;
+                color: white;
+                border: none;
+                cursor: pointer;
+                transition: background-color 0.3s;
+            }
+    
+            .cv-button:hover {
+                background-color: #45a049;
+            }
+        </style>
+    </head>
+    <body>
+    
+        <!-- Section for CV button -->
+        <div class="cv-section">
+            <button class="cv-button" onclick="openCV()">Download CV</button>
+        </div>
+    
+        <!-- Add JavaScript to handle CV file download or opening -->
+        <script>
+            function openCV() {
+                window.open('C:\Users\91798\Desktop\ani web\ar cv.pdf','_blank' );
+            }
+        </script>
+    
+    </body>
+    </html>
+    
+  </section>
+
+  <section id="projects" class="projects-section">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Project 1: Portfolio Website</h3>
+      <p>A portfolio website built using HTML, CSS, and JavaScript. It showcases my projects and skills.</p>
+    </div>
+    <div class="project">
+      <h3>Project 2: Task Manager App</h3>
+      <p>A task management web application to help users organize their daily tasks. Built with React and Node.js.</p>
+    </div>
+  </section>
+
+  <section id="contact" class="contact-section">
+    <h2>Contact Me</h2>
+    <form id="contact-form">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Your Name. All Rights Reserved.</p>
+  </footer>
+
+  <script src="web.js"></script>
+</body>
+</html>

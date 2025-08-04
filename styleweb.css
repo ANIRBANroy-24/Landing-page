@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style-type: none;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Home section with Flexbox */
+  .home-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+    background-color:black;
+    color: white;
+    height: 100vh; /* Full screen height */
+  }
+  
+  .home-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+  }
+  
+  .home-text {
+    flex: 1;
+    padding-right: 20px;
+  }
+  
+  .home-image {
+    flex: 1;
+    background-image: url(img/WhatsApp_Image_2024-09-28_at_02.11.32_cc13df7a-removebg-preview.png); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  /* For smaller screens (responsive design) */
+  @media (max-width: 768px) {
+    .home-section {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .home-text, .home-image {
+      padding: 0;
+      width: 100%;
+    }
+  
+    .home-image {
+      height: 300px;
+    }
+  }
+  
+  .about-section, .projects-section, .contact-section {
+    padding: 50px;
+    text-align: center;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+  }
+  
